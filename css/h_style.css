@@ -402,14 +402,3 @@ legend {
     color: #ffe;
     background-color: #5488af;
 }
-
-.RadioLabelClass {
-    background: url(../images/radio-off.png) no-repeat;
-    padding-left: 30px;
-    display: block;
-    margin: 3px
-}
-
-.RadioSelected {
-    background: url(../images/radio-on.png) no-repeat
-}
