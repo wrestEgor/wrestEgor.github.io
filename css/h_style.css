@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "Magistral Bold";
+    src: url(fonts/magistral_bold.ttf)
+}
+
+body {
+    font: 14px/18px HelveticaNeue-Light, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: #edeef0;
+}
+
+a:hover,a:active {
+    outline: none
+}
+
+/**/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+li ul {
+    top: 42px;
+    right: 10px;
+    position: fixed;
+    display: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #507299;
+    border-bottom: none;
+    height: 32;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+li a:hover {
+    color: #ffe;
+    transition: background-color 100ms;
+    background-color: #5488af;
+}
+
+li:hover ul {
+    display: block;
+}
+
+/**/
+.menu_btn {
+    width: 20;
+    height: 32;
+    position: fixed;
+    background-image: url(../images/menu.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.items {
+    position: fixed;
+    background: #507299;
+    top: 80;
+    right: 10;
+    opacity: 0;
+    z-index: 1;
+}
+
+.split {
+    height: inherit;
+    width: 1px;
+    background-color: white;
+}
+
+#workspace {
+    background: #ffffff;
+    margin-left: 10%;
+    margin-top: 0;
+    width: 80%;
+}
+
+.set_left {
+    left: inherit;
+    float: left;
+}
+
+.set_right {
+    right: inherit;
+    float: right;
+}
+
+div#t_item {
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background: #507299;
+    height: 42px;
+    left: 0;
+    z-index: 1;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Trebuchet MS";
+}
+
+.button_popup {
+    background-color: #2a4a6a;
+    border-radius: 7px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px
+}
+
+.button_popup:hover {
+    background-color: #1e1e1e
+}
+
+.button_popup>span {
+    font-size: 84%
+}
+
+.popup_body {
+    background: #4f84b8 url(../images/border_big.png) repeat;
+    width: 640px;
+    border-radius: 7px;
+    box-shadow: 12px 12px 20px #262f37;
+    border: 1px solid #386b9c;
+    padding: 0
+}
+
+.popup_header {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #fbfbfb, 0 0 20px #f0f0f0;
+    font-weight: 700;
+    background-color: #386b9c;
+    border-radius: 7px 7px 0 0;
+    box-shadow: 0 5px 10px #274b6e;
+    padding: 20px 0 15px
+}
+
+.button_popup.b-close,.button_popup.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    padding: 0 6px 2px
+}
+
+.inputbox {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 8px 8px 8px #376f9f;
+    height: 15px;
+    color: #333;
+    width: 83%;
+    padding: 4px 7px
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: #999
+}
+
+.textarea_box {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    color: #444;
+    width: 87%;
+    border-radius: 5px;
+    height: 80px;
+    box-shadow: 8px 8px 8px #376f9f;
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #e5e5e5), color-stop(1, #ffffff));
+    margin: 0 0 7px;
+    padding: 3px 7px
+}
+
+.transition_dur {
+    -webkit-transition-duration: .5s
+}
+
+.textarea_box:focus {
+    height: 200px
+}
+
+#sizer {
+    width: inherit;
+    margin: 0 auto;
+    padding: 5%;
+    padding-left: 2%;
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 40px;
+    background: #4a77b3 url(../images/box-grad.png) repeat-x 0 0;
+    border-radius: 7px;
+    box-shadow: 0 5px 12px rgba(0,0,0,.4);
+    position: relative;
+    padding: 18px 20px 10px
+}
+
+fieldset {
+    border: 1px solid #39699C;
+    border-radius: 7px;
+    background: #4f84b8 url(../images/border.png) repeat;
+    box-shadow: 8px 8px 10px #3b6aa7;
+    margin: 15px 5px;
+    padding: 12px 10px
+}
+
+label {
+    left: inherit;
+    right: inherit;
+    display: block;
+    line-height: 20px;
+    padding-bottom: 9px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+
+legend {
+    font-size: 18px;
+    font-family: "Magistral Bold";
+    text-shadow: 0 0 10px #D6D6D6
+}
+
+.menuItem {
+    display: block;
+    text-decoration: none;
+    color: #ffe;
+    background-color: #507299;
+    border-bottom: none;
+    height: 18;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-family: "Trebuchet MS";
+}
+
+.label {
+    display: block;
+    text-decoration: none;
+    color: #ffe;
+    background-color: #507299;
+    border-bottom: none;
+    height: 18;
+    padding: 12px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.menuItem:hover {
+    color: #ffe;
+    background-color: #5488af;
+}
+
+.RadioLabelClass {
+    background: url(../images/radio-off.png) no-repeat;
+    padding-left: 30px;
+    display: block;
+    margin: 3px
+}
+
+.RadioSelected {
+    background: url(../images/radio-on.png) no-repeat
+}
