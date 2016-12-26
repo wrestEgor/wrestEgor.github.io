@@ -6,7 +6,7 @@
 body {
     font: 14px/18px HelveticaNeue-Light, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #fff;
-    background: #edeef0;
+    background: white;
 }
 
 a:hover,a:active {
@@ -87,7 +87,7 @@ li:hover ul {
 }
 
 #workspace {
-    background: #ffffff;
+    background: rgba(0, 0, 0, 0.73);
     margin-left: 10%;
     margin-top: 0;
     width: 80%;
