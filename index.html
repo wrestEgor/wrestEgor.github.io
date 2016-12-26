@@ -5,26 +5,26 @@
         <title>Сайтик :)</title>
     </head>
     <body>
-        <div class="items set_right" id="items1">
-            <a class="menuItem" href="lnk1.html">Подменю №1.1</a>
-            <a class="menuItem" href="lnk2.html">Подменю №1.2</a>
-            <a class="menuItem" href="lnk3.html">Подменю №1.3</a>
-            <a class="menuItem" href="lnk4.html">Подменю №1.4</a>
-            <a class="menuItem" href="lnk5.html">Подменю №1.5</a>
-            <a class="menuItem" href="lnk6.html">Подменю №1.6</a>
-            <a class="menuItem" href="lnk7.html">Подменю №1.7</a>
-            <a class="menuItem" href="lnk8.html">Подменю №1.8</a>
-            <a class="menuItem" href="lnk9.html">Подменю №1.9</a>
+        <div class="items set_right" style="right: -9999;" id="items1">
+            <a class="menuItem" href="#">Подменю №1.1</a>
+            <a class="menuItem" href="#">Подменю №1.2</a>
+            <a class="menuItem" href="#">Подменю №1.3</a>
+            <a class="menuItem" href="#">Подменю №1.4</a>
+            <a class="menuItem" href="#">Подменю №1.5</a>
+            <a class="menuItem" href="#">Подменю №1.6</a>
+            <a class="menuItem" href="#">Подменю №1.7</a>
+            <a class="menuItem" href="#">Подменю №1.8</a>
+            <a class="menuItem" href="#">Подменю №1.9</a>
         </div>
-        <div class="items set_right" id="items2">
-            <a class="menuItem" href="lnk1.html">Подменю №2.1</a>
-            <a class="menuItem" href="lnk2.html">Подменю №2.2</a>
-            <a class="menuItem" href="lnk3.html">Подменю №2.3</a>
-            <a class="menuItem" href="lnk4.html">Подменю №2.4</a>
-            <a class="menuItem" href="lnk5.html">Подменю №2.5</a>
+        <div class="items set_right" style="right: -9999;" id="items2">
+            <a class="menuItem" href="#">Функция</a>
+            <a class="menuItem" href="#">Функция Функция</a>
+            <a class="menuItem" href="#">Функция Функция Функция</a>
+            <a class="menuItem" href="#">Функция Функция Функция Функция</a>
+            <a class="menuItem" href="#">Функция Функция Функция Функция Функция</a>
         </div>
         <div class="menu" style="top: 0;">
-            <div class="menu_btn" id="menu_btn2" style="left:10;" onclick="menu_click(menu_btn2, items2)" onmouseenter="menu_enter(menu_btn2)" onmouseleave="menu_leave(menu_btn2)"></div>
+            <div class="label btn" id="menu_btn2" style="left:10;" onclick="menu_click(menu_btn2, items2)" onmouseenter="menu_enter(menu_btn2)" onmouseleave="menu_leave(menu_btn2)">Меню разработчика</div>
             <div id="t_item">
                 <ul>
                     <li>
@@ -35,7 +35,7 @@
         </div>
         <div class="menu" style="bottom: 0;">
             <div class="split set_left"></div>
-            <div class="label set_left" href="skype:+375333620257?call">Карпович Е.В +375333620257</div>
+            <div class="label set_left" href="skype:+375333620257?call">Связаться со мной: +375333620257 MTS, Карпович Е.В </div>
             <div class="split set_left"></div>
             <div class="split set_right"></div>
             <div class="label set_right">Текст 1</div>
@@ -72,58 +72,67 @@
                         <textarea name="message" id="message" placeholder="Напиши что-нибудь!" rows="6"></textarea>
                     </div>
                     <br>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
-                    <legend>Текст</legend>
+                    <legend>И ещё парочку галочек:</legend>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy1" name="copy">
+                        <label for="copy1">Готов принимать участие в разработке различных проектов</label>
+                        <input type="checkbox" id="copy2" name="copy">
+                        <label for="copy2">Я уверен в этом в этом ответе</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy3" name="copy">
+                        <label for="copy3">Хорошо знаю своё дело</label>
+                        <input type="checkbox" id="copy4" name="copy">
+                        <label for="copy4">Я уверен в этом в этом ответе</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy5" name="copy">
+                        <label for="copy5">Программирование - это моё</label>
+                        <input type="checkbox" id="copy6" name="copy">
+                        <label for="copy6">Я уверен в этом в этом ответе</label>
+                    </div>
+                    <br>
+                    <legend>Согласись со всеми правилами для продолжения:</legend>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy7" name="copy">
+                        <label for="copy7">Правило №1</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy8" name="copy">
+                        <label for="copy8">Правило №2</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy9" name="copy">
+                        <label for="copy9">Правило №3</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy10" name="copy">
+                        <label for="copy10">Правило №4</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy11" name="copy">
+                        <label for="copy11">Правило №5</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy12" name="copy">
+                        <label for="copy12">Правило №6</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy13" name="copy">
+                        <label for="copy13">Правило №7</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy14" name="copy">
+                        <label for="copy14">Правило №8</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy15" name="copy">
+                        <label for="copy15">Правило №9</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="copy16" name="copy">
+                        <label for="copy16">Правило №10</label>
+                    </div>
                 </div>
             </div>
         </div>
