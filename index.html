@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/h_style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Сайтик :)</title>
+    </head>
+    <body>
+        <div class="items set_right" id="items1">
+            <a class="menuItem" href="lnk1.html">Подменю №1</a>
+            <a class="menuItem" href="lnk2.html">Подменю №2</a>
+            <a class="menuItem" href="lnk3.html">Подменю №3</a>
+            <a class="menuItem" href="lnk4.html">Подменю №4</a>
+            <a class="menuItem" href="lnk5.html">Подменю №5</a>
+            <a class="menuItem" href="lnk6.html">Подменю №6</a>
+            <a class="menuItem" href="lnk7.html">Подменю №7</a>
+            <a class="menuItem" href="lnk8.html">Подменю №8</a>
+            <a class="menuItem" href="lnk9.html">Подменю №9</a>
+            <a class="menuItem" href="lnk10.html">Подменю №10</a>
+        </div>
+        <div class="menu" style="top: 0;">
+            <div id="t_item">
+                <ul>
+                    <li>
+                        <a class="menu_btn" id="menu_btn1" style="right:10;" onclick="menu_click(menu_btn1, items1)" onmouseenter="menu_enter(menu_btn1)" onmouseleave="menu_leave(menu_btn1)"></a>
+                        <a class="menu_btn" id="menu_btn2" style=""></a>
+                        <a class="menu_btn" id="menu_btn3" style=""></a>
+                        <a class="menu_btn" id="menu_btn4" style=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu" style="bottom: 0;">
+            <div class="split set_left"></div>
+            <div class="label set_left" href="skype:+375333620257?call">Карпович Е.В +375333620257</div>
+            <div class="split set_left"></div>
+            <div class="split set_right"></div>
+            <div class="label set_right">Текст 1</div>
+            <div class="split set_right"></div>
+            <div class="label set_right">Текст 12</div>
+            <div class="split set_right"></div>
+            <div class="label set_right">Текст 123</div>
+            <div class="split set_right"></div>
+            <div class="label set_right">Текст 1234</div>
+            <div class="split set_right"></div>
+            <div class="label set_right">Текст 12345</div>
+            <div class="split set_right"></div>
+        </div>
+        <div id="workspace">
+            <div id="sizer">
+                <div class="form">
+                    <legend style="opacity: 0.1;">Текст</legend>
+                    <legend style="opacity: 0.2;">Текст</legend>
+                    <legend style="opacity: 0.3;">Текст</legend>
+                    <legend style="opacity: 0.4;">Текст</legend>
+                    <legend style="opacity: 0.5;">Текст</legend>
+                    <legend style="opacity: 0.6;">Текст</legend>
+                    <legend style="opacity: 0.7;">Текст</legend>
+                    <legend style="opacity: 0.8;">Текст</legend>
+                    <legend style="opacity: 0.9;">Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                    <legend>Текст</legend>
+                </div>
+            </div>
+        </div>
+</ul></div></div><script>
+    function menu_click(own1, own2) {
+        own1.classList.toggle('active');
+        if (own1.classList.contains('active')) {
+            own2.style.right = own1.style.right;
+            own2.style.transition = 'top 1s, opacity 0.8s';
+            own2.style.top = 42;
+            own2.style.opacity = 1;
+        } else {
+            setTimeout(function() {
+                if (!(own1.classList.contains('active'))) {
+                    own2.style.right = -9999;
+                }
+            }, 1000);
+            own2.style.transition = 'top 1s, opacity 0.8s';
+            own2.style.top = 80;
+            own2.style.opacity = 0;
+        }
+        return 0
+    }
+    function menu_enter(own1) {
+        own1.style.backgroundColor = '#5488af';
+        return 0
+    }
+    function menu_leave(own1) {
+        if (own1.classList.contains('active')) {
+            own1.style.backgroundColor = '#5488af';
+        } else {
+            own1.style.backgroundColor = '';
+        }
+        return 0
+    }
+</script>
+</body></html>
