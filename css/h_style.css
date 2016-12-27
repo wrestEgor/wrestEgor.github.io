@@ -6,7 +6,15 @@
 body {
     font: 14px/18px HelveticaNeue-Light, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #fff;
-    background: white;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+#workspace {
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 10%;
+    margin-top: 0;
+    width: 80%;
 }
 
 a:hover,a:active {
@@ -35,7 +43,6 @@ li a {
     display: block;
     text-decoration: none;
     color: #fff;
-    background-color: #507299;
     border-bottom: none;
     height: 32;
     padding: 5px;
@@ -46,7 +53,7 @@ li a {
 li a:hover {
     color: #ffe;
     transition: background-color 100ms;
-    background-color: #5488af;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 li:hover ul {
@@ -86,13 +93,6 @@ li:hover ul {
     border-top-width: 0px;
 }
 
-#workspace {
-    background: rgba(0, 0, 0, 0.73);
-    margin-left: 10%;
-    margin-top: 0;
-    width: 80%;
-}
-
 .set_left {
     left: inherit;
     float: left;
@@ -109,7 +109,7 @@ div#t_item {
 .menu {
     position: fixed;
     width: 100%;
-    background: #507299;
+    background: rgba(0, 0, 0, 0.7);
     height: 42px;
     left: 0;
     z-index: 1;
@@ -136,37 +136,6 @@ div#t_item {
 
 .button_popup>span {
     font-size: 84%
-}
-
-.popup_body {
-    background: #4f84b8 url(../images/border_big.png) repeat;
-    width: 640px;
-    border-radius: 7px;
-    box-shadow: 12px 12px 20px #262f37;
-    border: 1px solid #386b9c;
-    padding: 0
-}
-
-.popup_header {
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-shadow: 0 0 15px #fbfbfb, 0 0 20px #f0f0f0;
-    font-weight: 700;
-    background-color: #386b9c;
-    border-radius: 7px 7px 0 0;
-    box-shadow: 0 5px 10px #274b6e;
-    padding: 20px 0 15px
-}
-
-.button_popup.b-close,.button_popup.bClose {
-    border-radius: 7px 7px 7px 7px;
-    box-shadow: none;
-    font: bold 131% sans-serif;
-    position: absolute;
-    right: -7px;
-    top: -7px;
-    padding: 0 6px 2px
 }
 
 .inputbox {
@@ -326,8 +295,11 @@ select.input-lg {
 #sizer {
     width: inherit;
     margin: 0 auto;
-    padding: 5%;
-    padding-left: 2%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 .form {
@@ -370,7 +342,6 @@ label {
     text-decoration: none;
     color: #fff;
     border: 0px solid #000;
-    background-color: #507299;
     border-bottom: none;
     height: 18;
     padding: 12px;
@@ -388,7 +359,7 @@ legend {
     display: block;
     text-decoration: none;
     color: #ffe;
-    background-color: #507299;
+    background-color: rgb(0, 0, 0);
     border-bottom: none;
     height: 18;
     padding: 12px;
